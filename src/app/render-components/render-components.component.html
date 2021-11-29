@@ -1,0 +1,18 @@
+  <div class="row" style="border: 1px red solid">
+    <div class="col-8" style="border: 1px green solid">
+      <ng-container #container></ng-container>
+    </div>
+    <div class="col-4" style="border: 1px yellow solid">
+      <strong>Drag Items from the list</strong>
+      <ul>
+        <li draggable="true" (dragover)="sendHeader('header')">Header</li>
+        <li draggable="true" (dragover)="sendHeader('table')">Table</li>
+        <li draggable="true" (dragover)="sendHeader('footer')">Footer</li>
+        <li (dragover)="sendHeader('button')" draggable="true">Button</li>
+        <li draggable="true" (dragover)="sendHeader('textbox')">Textbox</li>
+        <li draggable="true" (dragover)="sendHeader('spinner')">Spinner</li>
+        <li draggable="true" (dragover)="sendHeader('dropDown')">Dropdown</li>
+        <li draggable="true" (dragover)="sendHeader('time')">Time</li>
+      </ul>
+    </div>
+  </div>
